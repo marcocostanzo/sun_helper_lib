@@ -101,8 +101,8 @@ find_package(catkin REQUIRED COMPONENTS ros_toon)
 catkin_package(
  INCLUDE_DIRS include
  LIBRARIES ${PROJECT_NAME}
-#  CATKIN_DEPENDS other_catkin_pkg
-#  DEPENDS system_lib #lapack maybe needed here
+ CATKIN_DEPENDS ros_toon
+#  DEPENDS system_lib
 )
 
 ###########
@@ -150,10 +150,7 @@ add_library(${PROJECT_NAME}
 #target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(${PROJECT_NAME}
-   #${catkin_LIBRARIES}
-	lapack
- )
+
 
 
 #############
