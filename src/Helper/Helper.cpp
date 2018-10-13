@@ -66,14 +66,6 @@ Matrix<> readFileM(const string& path, unsigned int n_r, unsigned int n_c){
 	return out;
 }
 
-Matrix<3,3> skew( Vector<3> v ){
-	return Data( 0.0, -v[2] , v[1],
-				v[2],  0.0  , -v[0],
-				-v[1], v[0] , 0.0);
-}
-
-
-
 
 char askForChar( const char* str){
 	/* USAGE
