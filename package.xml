@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>unicampania_helper_lib</name>
+  <name>sun_helper_lib</name>
   <version>0.0.0</version>
-  <description>The unicampania_helper_lib package</description>
+  <description>The sun_helper_lib package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
