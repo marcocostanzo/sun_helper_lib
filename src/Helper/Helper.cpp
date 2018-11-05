@@ -94,3 +94,15 @@ char askForChar( const char* str){
 
 	return ans;
 }
+
+double SchmittTrigger( double input, bool& state, double min, double max, double output_when_active ){
+	if( !state && input < min ){
+		state = true;
+	} else if( state && input > max ){
+		state = false;
+	}
+	if(state){
+		return output_when_active;
+	}
+	return input;
+}

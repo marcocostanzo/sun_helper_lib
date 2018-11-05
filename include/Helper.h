@@ -54,4 +54,6 @@ TooN::Matrix<> readFileM(const std::string& path,unsigned  int n_r,unsigned  int
 	*/
 char askForChar( const char* str);
 
+double SchmittTrigger( double input, bool& state, double min, double max, double output_when_active );
+
 #endif
