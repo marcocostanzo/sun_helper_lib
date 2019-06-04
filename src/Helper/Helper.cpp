@@ -30,7 +30,7 @@ Vector<> readFileV(const string& path, unsigned int dim){
 	if (f == NULL){
 		printf(BOLDRED "Error opening file..." CRESET);
 		printf(BOLDBLUE " %s\n" CRESET,path.c_str());
-		exit(1);
+		throw std::runtime_error("Could not open file");
 	}
 
 	Vector<> out = Zeros(dim);
@@ -52,7 +52,7 @@ Matrix<> readFileM(const string& path, unsigned int n_r, unsigned int n_c){
 	if (f == NULL){
 		printf(BOLDRED "Error opening file..." CRESET);
 		printf(BOLDBLUE " %s\n" CRESET,path.c_str());
-		exit(1);
+		throw std::runtime_error("Could not open file");
 	}
 
 	Matrix<> out = Zeros(n_r,n_c);
