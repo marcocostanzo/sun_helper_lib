@@ -1,0 +1,5 @@
+
+- git:
+    local-name: ros_toon
+    uri: git@github.com:marcocostanzo/ros_toon.git
+    version: TOON_3.2
