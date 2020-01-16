@@ -3,3 +3,8 @@
     local-name: ros_toon
     uri: git@github.com:marcocostanzo/ros_toon.git
     version: TOON_3.2
+
+- git:
+    local-name: sun_helper_lib
+    uri: git@github.com:marcocostanzo/sun_helper_lib.git
+    version: master
